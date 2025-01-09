@@ -1,0 +1,11 @@
+[Unit]
+Description=wpp-send
+After=multi-user.target
+[Service]
+Type=simple
+ExecStart=/usr/src/wpp-send/src/main.py
+User=root
+WorkingDirectory=/usr/src/wpp-send/src/
+Restart=no
+[Install]
+WantedBy=multi-user.target
