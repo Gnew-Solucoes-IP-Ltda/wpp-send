@@ -26,3 +26,7 @@ cp config/systemd/wpp-send.service /etc/systemd/system/
 systemctl enable wpp-send
 systemctl daemon-reload
 systemctl start wpp-send.service
+
+echo "Reiniciando serviços do Asterisk"
+/etc/init.d/asterisk restart
+asterisk -rx 'logger reload'
