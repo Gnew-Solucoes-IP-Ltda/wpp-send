@@ -53,7 +53,7 @@ bash install.sh
 
 ## Configuração
 
-Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
+Crie um arquivo .env no diretório `/usr/src/wpp-send/src/` com as seguintes variáveis:
 
 ```
 ACCESS_TOKEN='TOKEN API GCHAT'
